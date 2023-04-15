@@ -29,13 +29,13 @@ body {
 
 .info-title {
     color: #949494;
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 .info-content {
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
@@ -73,28 +73,37 @@ section {
 h1 {
     /* margin: 10px 0 0 50px; */
     display: flex;
-    font-size: 80px;
+    font-size: 4.5rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     column-gap: 0;
 }
 
+h1:hover {
+    transform: scale(1.02);
+}
+
 .infomid {
     margin: 10% 0 10% 0;
-    font-size: 17px;
+    font-size: 1.2rem;
     color: black;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
 }
 
 a {
-    font-size: 17px;
+    font-size: 1rem;
     color: black;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+
+a:hover {
+    transform: scale(1.10);
+}
+
 
 .Social-link {
     display: flex;
@@ -112,10 +121,17 @@ a {
 }
 
 .photo {
+    height: 100vh;
+    width: 30%;
     display: flex;
-    justify-content: baseline;
+    filter: grayscale(100%);
+    /* justify-content: baseline; */
 }
 
+.photo:hover {
+    transform: scale(1.01);
+    filter: grayscale(0%);
+}
 
 .Home {
     display: flex;
@@ -144,7 +160,7 @@ a {
     align-items: center;
     justify-content: center;
     color: black;
-    font-size: 45px;
+    font-size: 3rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
 }
@@ -155,7 +171,7 @@ a {
     align-items: center;
     justify-content: center;
     color: black;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
 }
@@ -198,7 +214,7 @@ a {
     align-items: center;
     justify-content: center;
     color: black;
-    font-size: 45px;
+    font-size: 3rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
 }
@@ -232,7 +248,7 @@ a {
     margin: 0%;
     align-items: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
     color: #D8D8D8;
@@ -242,7 +258,7 @@ a {
     margin: 3%;
     align-items: center;
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
     color: #D8D8D8;
@@ -285,7 +301,7 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
     margin: 5%;
@@ -319,8 +335,13 @@ button {
     justify-content: center;
     background-color: #D8D8D8;
     color: black;
-    font-size: 25px;
+    font-size: 1rem;
     font-family: 'Courier Prime', monospace;
     font-family: 'Poppins', sans-serif;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    transform: scale(1.01);
 }
